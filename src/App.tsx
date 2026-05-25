@@ -176,7 +176,7 @@ export default function App() {
           </div>
           
           <p className="text-gray-300 text-[15px] mb-8">
-            Copyright © 2026 ConsumerSkills.com All Rights Reserved
+            Copyright © 2026 ConsumerSkills.org All Rights Reserved
           </p>
           
           <p className="text-[#a0aab8] text-[13px] italic leading-relaxed max-w-6xl mx-auto">

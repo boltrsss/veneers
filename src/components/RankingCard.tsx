@@ -38,7 +38,7 @@ export const RankingCard: React.FC<{ product: ProductSpec }> = ({ product }) => 
           <img
             src={product.imageUrl}
             alt={product.name}
-            className={`max-w-full h-auto ${(isTopPick || isFullWidth) ? 'object-cover rounded shadow-sm border border-gray-200' : 'object-contain w-[90%] max-w-[200px] max-h-[160px]'}`}
+            className={`w-[90%] md:w-full max-w-[320px] md:max-w-[100%] h-auto object-cover rounded shadow-sm border border-gray-200`}
           />
         </div>
 
