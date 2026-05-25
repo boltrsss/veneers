@@ -102,6 +102,8 @@ export const PopupModal: React.FC = () => {
             
             <a 
               href="https://go.consumerskills.org/click"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex w-full justify-center items-center bg-[#f6891f] hover:bg-[#e07715] transition-colors text-white font-bold text-lg md:text-[19px] py-4 px-6 rounded shadow-md transform hover:-translate-y-0.5 duration-200"
             >
               CLICK HERE TO SAVE NOW

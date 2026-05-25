@@ -168,7 +168,7 @@ export const DeepDiveSection: React.FC = () => {
           </p>
 
           <div className="mt-8 mb-8">
-            <a href="https://go.consumerskills.org/click" className="text-blue-600 font-bold hover:underline flex items-center text-[15.5px]">
+            <a href="https://go.consumerskills.org/click" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-bold hover:underline flex items-center text-[15.5px]">
               👉 Click here to check Shiny Smile Veneers availability & discounts today.
             </a>
           </div>
@@ -176,12 +176,14 @@ export const DeepDiveSection: React.FC = () => {
           <div className="bg-[#fcf8e3] border border-[#faebcc] p-6 rounded-sm mb-6 text-gray-800">
             <strong className="font-bold text-gray-900 block mb-3 text-[14px]">IMPORTANT INFORMATION!</strong>
             <p className="text-[14px] leading-relaxed">
-              <strong className="font-bold text-gray-900">As of May 24, 2026</strong>, Following features in major media outlets, <a href="https://go.consumerskills.org/click" className="font-bold text-blue-600 hover:underline">Shiny Smile Veneers</a> has seen overwhelming demand. Thanks to thousands of positive reviews and brand confidence, they are temporarily offering first-time buyers an exclusive 40% discount on their order.
+              <strong className="font-bold text-gray-900">As of May 24, 2026</strong>, Following features in major media outlets, <a href="https://go.consumerskills.org/click" target="_blank" rel="noopener noreferrer" className="font-bold text-blue-600 hover:underline">Shiny Smile Veneers</a> has seen overwhelming demand. Thanks to thousands of positive reviews and brand confidence, they are temporarily offering first-time buyers an exclusive 40% discount on their order.
             </p>
           </div>
 
           <a 
             href="https://go.consumerskills.org/click"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full bg-[#f6891f] hover:bg-[#e07715] transition-colors text-white font-bold text-[18px] py-4 px-6 rounded shadow-sm flex items-center justify-center mb-2"
           >
             CHECK AVAILABILITY & DISCOUNTS
@@ -321,6 +323,8 @@ export const DeepDiveSection: React.FC = () => {
 
           <a 
             href={topProduct.link}
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full bg-[#f6891f] hover:bg-[#e07715] transition-colors text-white font-bold text-[14px] py-2.5 px-4 rounded shadow-sm flex items-center justify-center"
           >
             {topProduct.buttonText}

@@ -103,6 +103,8 @@ export const RankingCard: React.FC<{ product: ProductSpec }> = ({ product }) => 
 
         <a 
           href={product.link}
+          target="_blank"
+          rel="noopener noreferrer"
           className="w-[90%] mx-auto bg-[#f6891f] hover:bg-[#e07715] transition-colors text-white font-bold md:text-[15px] py-2.5 px-4 rounded shadow-sm flex items-center justify-center mb-1"
         >
           {product.buttonText}
