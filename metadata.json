@@ -1,0 +1,6 @@
+{
+  "name": "Veneers Comparison Website",
+  "description": "A layout and style replica of a snap-on veneers comparison affiliate site.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
