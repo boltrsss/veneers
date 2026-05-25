@@ -61,11 +61,9 @@ export const PopupModal: React.FC = () => {
     setTimeout(() => setIsActive(false), 300);
   };
 
-  if (!isActive) return null;
-
   return (
-    <div id="popup1" className={`fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 transition-opacity duration-300 ${show ? 'opacity-100' : 'opacity-0'}`}>
-      <div className={`bg-white w-full max-w-2xl rounded-xl shadow-2xl overflow-hidden relative transition-all duration-300 transform ${show ? 'scale-100 translate-y-0' : 'scale-95 translate-y-4'}`}>
+    <div id="popup1" className={`fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 transition-opacity duration-300 ${isActive && show ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}>
+      <div className={`bg-white w-full max-w-2xl rounded-xl shadow-2xl overflow-hidden relative transition-all duration-300 transform ${isActive && show ? 'scale-100 translate-y-0' : 'scale-95 translate-y-4'}`}>
         {/* Header */}
         <div className="bg-[#db4e3d] text-white text-center py-2.5 relative">
           <span className="font-bold uppercase tracking-wider text-[15px] md:text-base">Hurry, Limited Time Offer</span>
@@ -102,8 +100,6 @@ export const PopupModal: React.FC = () => {
             
             <a 
               href="https://go.consumerskills.org/click"
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex w-full justify-center items-center bg-[#f6891f] hover:bg-[#e07715] transition-colors text-white font-bold text-lg md:text-[19px] py-4 px-6 rounded shadow-md transform hover:-translate-y-0.5 duration-200"
             >
               CLICK HERE TO SAVE NOW
