@@ -77,24 +77,22 @@ export const PopupModal: React.FC = () => {
           </button>
         </div>
         
-        <div className="flex flex-col md:flex-row p-6 md:p-8 gap-6 md:gap-8 items-center">
+        <div className="flex flex-col sm:flex-row p-5 md:p-8 gap-4 md:gap-8 items-center">
           {/* Left column: image */}
-          <div className="w-full md:w-1/2">
+          <div className="w-[60%] sm:w-1/2 max-w-[200px] sm:max-w-none">
             <img 
-              src="/images/Shiny Smile Veneers.jpg" 
+              src="/images/shinysmile.jpg" 
               alt="Shiny Smile Veneers" 
               className="w-full h-auto rounded shadow-sm border border-gray-100 object-cover"
             />
           </div>
           
           {/* Right column: offer headline, description, and CTA button */}
-          <div className="w-full md:w-1/2 text-center flex flex-col justify-center">
-            <h2 className="text-3xl md:text-[34px] font-black text-gray-900 mb-3 leading-tight tracking-tight">
-              Claim Your <br />
-              <span className="text-[#42b55f] text-4xl md:text-5xl">40% Off</span> <br />
-              Today!
+          <div className="w-full sm:w-1/2 text-center flex flex-col justify-center">
+            <h2 className="text-[26px] md:text-[34px] font-black text-gray-900 mb-2 md:mb-3 leading-[1.1] md:leading-tight tracking-tight">
+              Claim Your <span className="text-[#42b55f] block sm:inline md:block text-[32px] md:text-5xl my-1 md:my-0">40% Off</span> Today!
             </h2>
-            <p className="text-gray-700 text-[15.5px] font-medium mb-6 leading-relaxed">
+            <p className="text-gray-700 text-[14px] md:text-[15.5px] font-medium mb-4 md:mb-6 leading-relaxed px-2 md:px-0">
               Buy Shiny Smile Veneers now and get <strong className="text-gray-900">40% off</strong> the original price.
             </p>
             
