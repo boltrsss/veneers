@@ -1,5 +1,11 @@
 import { ProductSpec } from './types';
 
+// Calculate sales ends date dynamically (today)
+const salesEndDate = new Date();
+const formattedSalesEndDate = salesEndDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }); // e.g. "May 26, 2026"
+
+export const getDynamicEndDate = () => formattedSalesEndDate;
+
 export const products: ProductSpec[] = [
   {
     id: 1,
@@ -70,9 +76,9 @@ export const products: ProductSpec[] = [
     ratingText: 'Excellent',
     ratingColor: 'text-green-700',
     starCount: 5,
-    reviewCount: '13,518',
+    reviewCount: '14,352',
     discountText: '40% OFF',
-    discountEnds: 'May 24, 2026',
+    discountEnds: formattedSalesEndDate,
     buttonText: 'VISIT SITE',
     link: 'https://go.consumerskills.org/click',
   },
@@ -99,7 +105,7 @@ export const products: ProductSpec[] = [
     ratingText: 'Good',
     ratingColor: 'text-green-700',
     starCount: 4,
-    reviewCount: '9,751',
+    reviewCount: '11,219',
     buttonText: 'VISIT SITE',
     link: 'https://amzn.to/4dK9gU0',
   },
@@ -126,7 +132,7 @@ export const products: ProductSpec[] = [
     ratingText: 'Good',
     ratingColor: 'text-green-700',
     starCount: 4,
-    reviewCount: '1,358',
+    reviewCount: '1,542',
     buttonText: 'VISIT SITE',
     link: 'https://www.trusmileveneers.com/products/trusmile-custom-made-veneers',
   },
@@ -153,7 +159,7 @@ export const products: ProductSpec[] = [
     ratingText: 'Good',
     ratingColor: 'text-green-700',
     starCount: 4,
-    reviewCount: '5,688',
+    reviewCount: '6,189',
     buttonText: 'VISIT SITE',
     link: 'https://us.instasmile.com/',
   },
@@ -179,7 +185,8 @@ export const products: ProductSpec[] = [
     ratingText: 'Average',
     ratingColor: 'text-green-700',
     starCount: 3,
-    reviewCount: '962',
+    reviewCount: '1,048',
+
     buttonText: 'VISIT SITE',
     link: 'https://amzn.to/4dL2ugG',
   }

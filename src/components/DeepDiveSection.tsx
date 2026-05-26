@@ -26,7 +26,7 @@ export const DeepDiveSection: React.FC = () => {
           We Purchased and Reviewed the Top-Selling Snap-On Veneers—Here is Why Shiny Smile is Our Top Choice:
         </h2>
         <div className="text-[14px] text-gray-500 mb-8 font-medium">
-          Written By <span className="font-bold text-gray-700">Sarah Jenkins</span> – Updated <span className="font-bold text-gray-700">May 24, 2026</span>
+          Written By <span className="font-bold text-gray-700">Sarah Jenkins</span> – Updated <span className="font-bold text-gray-700">{new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric' }).format(new Date())}</span>
         </div>
 
         <div className="space-y-6 text-[18px] leading-[1.75]">
@@ -176,7 +176,7 @@ export const DeepDiveSection: React.FC = () => {
           <div className="bg-[#fcf8e3] border border-[#faebcc] p-6 rounded-sm mb-6 text-gray-800">
             <strong className="font-bold text-gray-900 block mb-3 text-[14px]">IMPORTANT INFORMATION!</strong>
             <p className="text-[14px] leading-relaxed">
-              <strong className="font-bold text-gray-900">As of May 24, 2026</strong>, Following features in major media outlets, <a href="https://go.consumerskills.org/click" className="font-bold text-blue-600 hover:underline">Shiny Smile Veneers</a> has seen overwhelming demand. Thanks to thousands of positive reviews and brand confidence, they are temporarily offering first-time buyers an exclusive 40% discount on their order.
+              <strong className="font-bold text-gray-900">As of {new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric' }).format(new Date())}</strong>, Following features in major media outlets, <a href="https://go.consumerskills.org/click" className="font-bold text-blue-600 hover:underline">Shiny Smile Veneers</a> has seen overwhelming demand. Thanks to thousands of positive reviews and brand confidence, they are temporarily offering first-time buyers an exclusive 40% discount on their order.
             </p>
           </div>
 

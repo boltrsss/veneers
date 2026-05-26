@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { getDynamicEndDate } from '../data';
 
 export const PopupModal: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
@@ -93,7 +94,7 @@ export const PopupModal: React.FC = () => {
               Claim Your <span className="text-[#42b55f] block sm:inline md:block text-[32px] md:text-5xl my-1 md:my-0">40% Off</span> Today!
             </h2>
             <p className="text-gray-700 text-[14px] md:text-[15.5px] font-medium mb-4 md:mb-6 leading-relaxed px-2 md:px-0">
-              Buy Shiny Smile Veneers now and get <strong className="text-gray-900">40% off</strong> the original price.
+              Buy Shiny Smile Veneers now and get <strong className="text-gray-900">40% off</strong> the original price. Offer ends <strong className="text-[#db4e3d]">{getDynamicEndDate()}</strong>!
             </p>
             
             <a 
